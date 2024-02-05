@@ -7,6 +7,7 @@ pipeline {
              steps {
                sh 'pwd'
                sh 'ls -lrt'
+               sh 'pwd'
              }
              }
              }
