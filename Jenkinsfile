@@ -3,7 +3,7 @@ pipeline {
 
 
    stages {
-      stage ('BUILD) {
+      stage ('BUILD') {
              steps {
                sh 'pwd'
                sh 'ls -lrt'
