@@ -10,5 +10,20 @@ pipeline {
         sh 'env | sort'
       }
     }
+    stage('stage 2') {
+      environment {
+        AAA_STAGE_LEVEL_VAR = 'stageLevel'
+      }
+      steps {
+        sh 'echo $AAA_STAGE_LEVEL_VAR'
+        sh 'env | sort'
+      }
+    }
+    stage('stage 3') {
+      steps {
+        sh 'echo $AAA_STAGE_LEVEL_VAR'
+        sh 'env | sort'
+      }
+    }
   }
 }
